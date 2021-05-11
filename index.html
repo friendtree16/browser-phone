@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="ja">
+    <head>
+        <title>twilio phone</title>
+        <script src="https://media.twiliocdn.com/sdk/js/client/v1.13/twilio.min.js"></script>
+        <script src="index.js"></script>
+    </head>
+    <body>
+        <div>
+            <input type="text" id="identity">
+            <button id="connect" onclick="connect()">接続</button>
+            <p id="display-name"></p>
+            <input type="text" id='phone-number' hidden>
+            <button id="outgoing" hidden onclick="makeCall()">発信</button>
+            <button id="hangup" hidden onclick="hangup()">切断</button>
+            <button id="reject" hidden onclick="reject()">拒否</button>
+            <button id="accept" hidden onclick="accept()">接続</button>
+        </div>
+        <div>
+            <p id="status"></p>
+        </div>
+    </body>
+</html>
